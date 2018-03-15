@@ -52,6 +52,10 @@ class Media {
     }
 
     // Parent class methods
+
+    // Todo: use reduce method.
+    // HINT: let ratingsSum = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);    
+    
     getAverageRating() {
         let ratingsSum = 0;
         let ratingsAverage = 0;
@@ -65,14 +69,6 @@ class Media {
         ratingsAverage = ratingsSum / this.ratings.length;
         return 'Average rating is: ' + ratingsAverage;
     }
-
-//     Under .toggleCheckOutStatus(), create a method named getAverageRating. Return the average value of the ratings array.
-
-// Use the reduce method to find the sum of the ratings array. Divide this sum by the length of the ratings array, and return the result.
-
-// Take a look at the hint if you need help with the syntax for finding the sum of the ratings array.
-
-// HINT: let ratingsSum = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);    
 
     toggleCheckOutStatus() {
         if (this.isCheckedOut === true) {
